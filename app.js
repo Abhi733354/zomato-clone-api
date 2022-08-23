@@ -65,4 +65,4 @@ app.use('/orders', ordersRoute);
 
 // })
 mongoose.connect('mongodb+srv://dbuser:jPXSgsLGOu4AKVSd@cluster0.dusfwes.mongodb.net/restdata?retryWrites=true&w=majority')
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
